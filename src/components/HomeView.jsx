@@ -1,9 +1,13 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 function HomeView() {
+
+  const key = import.meta.env.REACT_APP_CLIENT_ID;
+
+  console.log(key)
+
   const initialOptions = {
-    clientId:
-      "ARcBF1qjtkRmL7vp6J2qQGDbz46LG5FJWexdYbctDfmSY_5zkHGIP8jZ6sk5wpXY1HMX1b0qC_RTgzPx",
+    clientId: key,
     currency: "GBP",
     intent: "capture",
   };
