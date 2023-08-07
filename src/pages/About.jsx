@@ -34,7 +34,7 @@ function About() {
         </p>
         <p className="text-center font-main">
           Find out more about our tennis resources at{" "}
-          <a className="text-bold text-otfMaroon" href="www.coachingedgeuk.com">
+          <a className="text-bold text-otfMaroon" href="https://www.coachingedgeuk.com/">
             www.coachingedgeuk.com
           </a>
         </p>
