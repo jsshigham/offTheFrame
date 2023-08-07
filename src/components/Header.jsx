@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 import { LuAlignJustify } from "react-icons/lu";
+import { GiTennisCourt, GiTennisRacket } from "react-icons/gi";
+import { BsInfoCircle } from "react-icons/bs";
+import { AiOutlineHome } from "react-icons/ai";
+import { FaRegFaceSmile } from "react-icons/fa6";
+
 
 
 function Header() {
@@ -7,11 +12,11 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { title: "Home", link: "/", id: 1 },
-    { title: "The Characters", link: "/characters", id: 2 },
-    { title: "The Trickster", link: "/theTrickster", id: 3 },
-    { title: "The Court", link: "/theCourt", id: 4 },
-    { title: "About", link: "/about", id: 5 },
+    { title: "Home", link: "/", id: 1, emoji: <AiOutlineHome /> },
+    { title: "The Characters", link: "/characters", id: 2, emoji: <FaRegFaceSmile /> },
+    { title: "The Trickster", link: "/theTrickster", id: 3, emoji: <GiTennisRacket /> },
+    { title: "The Court", link: "/theCourt", id: 4, emoji: <GiTennisCourt /> },
+    { title: "About", link: "/about", id: 5, emoji: <BsInfoCircle /> },
   ];
 
   const updateScreenSize = () => {
@@ -37,15 +42,17 @@ function Header() {
       {smallScreenSize ? (
         <div className="flex flex-col gap-2 justify-center items-center relative rounded">
           <button onClick={() => setIsOpen((prev) => !prev)} className="flex justify-center items-center gap-2 text-xl">Menu <LuAlignJustify /></button>
-          {isOpen && <ul className="flex flex-col gap-1 items-center">
-            {links.map(({ title, link, id }) => {
+          {isOpen && <ul className=" absolute  flex flex-col gap-3 items-start w-72 rounded bg-otfMaroon top-10 p-5">
+            {links.map(({ title, link, id, emoji }) => {
+
             return (
               <a
                 key={id}
-                className="hover:bg-otfImageGrey rounded m-2 py-1 px-2"
+                className=" hover:bg-otfImageGrey p-2 rounded flex justify-between w-full items-center"
                 href={link}
               >
-                {title}
+                <h1>{title}</h1>
+                <div>{emoji}</div>
               </a>
             );
           })}
