@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useContext } from 'react';
+import MyContext from '../MyContext';
 import { LuAlignJustify } from "react-icons/lu";
 import { GiTennisCourt, GiTennisRacket } from "react-icons/gi";
 import { BsInfoCircle } from "react-icons/bs";
@@ -8,8 +9,8 @@ import { FaRegFaceSmile } from "react-icons/fa6";
 
 
 function Header() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [isOpen, setIsOpen] = useState(false);
+  
+  const { screenWidth, isOpen, setIsOpen } = useContext(MyContext);
 
   const links = [
     { title: "Home", link: "/", id: 1, emoji: <AiOutlineHome /> },
@@ -19,16 +20,7 @@ function Header() {
     { title: "About", link: "/about", id: 5, emoji: <BsInfoCircle /> },
   ];
 
-  const updateScreenSize = () => {
-    setScreenWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateScreenSize);
-    return () => {
-      window.removeEventListener("resize", updateScreenSize);
-    };
-  }, []);
+  
 
   let smallScreenSize = false;
   if (screenWidth < 768) {
@@ -36,7 +28,7 @@ function Header() {
   }
 
   return (
-    <header className="flex flex-col sticky top-0 bg-otfMaroon text-white items-center p-2 z-10 font-main">
+    <header className="flex flex-col sticky top-0 bg-otfMaroon text-white items-center p-2 z-10 font-main w-full">
       <h1 className="text-4xl pt-2">OFF THE FRAME</h1>
 
       {smallScreenSize ? (

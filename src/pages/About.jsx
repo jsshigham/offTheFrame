@@ -1,11 +1,18 @@
-import LeftSide from "/src/components/LeftSide";
-import RightSide from "/src/components/RightSide";
+// import { useContext } from 'react';
+// import MyContext from '../MyContext';
+
 function About() {
+  // const { screenWidth } = useContext(MyContext);
+
+  // let smallScreenSize = false;
+  // if (screenWidth < 768) {
+  //   smallScreenSize = true;
+  // }
+
   return (
-    <div className=" flex justify-between items-center">
-      <LeftSide />
-      <div className="flex flex-col justify-center w-7/12 items-center gap-5">
-        <p className="text-center font-main">
+    
+      <div className="flex flex-col justify-center w-10/12 md:w-8/12 items-center gap-5 text-center font-main text-xl md:text-2xl mt-5">
+        <p>
           Off The Frame: The Lighter Side of Tennis is a hilarious collection of
           stories, poems and sketches which revel in the foibles of players,
           coaches and pushy tennis parents alike. In the fictional English
@@ -15,11 +22,11 @@ function About() {
           sideways rain and who, instead of strawberries and cream, eat tinned
           fruit salad after matches.
         </p>
-        <p className="text-center font-main">
+        <p >
           But just what and where is Spin Valley and who on earth plays tennis
           there?
         </p>
-        <p className="text-center font-main">
+        <p >
           The real tennis population play in Spin Valley: tennis farmers who
           believe we should all play with more ‘grit’; vegetarian coaches who
           think patience and meditation will get you to Wimbledon;
@@ -28,23 +35,26 @@ function About() {
           on their beloved grass courts; untrained ball girls; Buddhist monks
           who hum their way through junior international matches.
         </p>
-        <p className="text-center font-main" >
+        <p >
           It is a long road from Spin Valley to Wimbledon but all tennis players
           and spectators will recognise the tennis played in Longshott.
         </p>
-        <p className="text-center font-main">
+        <p >
           Find out more about our tennis resources at{" "}
-          <a className="text-bold text-otfMaroon" href="https://www.coachingedgeuk.com/">
+          <a
+            className="text-bold text-otfMaroon"
+            href="https://www.coachingedgeuk.com/"
+          >
             www.coachingedgeuk.com
           </a>
         </p>
-        <p className="text-center font-main">
+        <p >
           Our latest tennis course ‘How to win tennis matches’ is ideal for
           levels of competitive player.
         </p>
+        <p>To get in touch please email <span className="text-bold text-otfMaroon" href="coachingedgeuk@icloud.com">coachingedgeuk@icloud.com</span></p>
       </div>
-      <RightSide />
-    </div>
+    
   );
 }
 

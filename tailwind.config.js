@@ -17,6 +17,7 @@ export default {
       'otfBookGrey': '#c5c4b0',
       'otfImageGrey': '#bcb3a0',
       'white': 'white',
+      'grey': 'light-grey',
     }
   },
   plugins: [],
