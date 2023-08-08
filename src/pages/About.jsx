@@ -13,7 +13,7 @@ function About() {
     
       <div className="flex flex-col justify-center w-10/12 md:w-8/12 items-center gap-5 text-center font-main text-xl md:text-2xl mt-5">
         <p>
-          Off The Frame: The Lighter Side of Tennis is a hilarious collection of
+        Written by <a className=" text-otfMaroon underline" href="https://www.linkedin.com/in/alistairhigham/" target="_blank" rel="noopener noreferrer">Alistair Higham</a> and Professor Ronald Carter, with sketches by Dave Slaney, Off The Frame: The Lighter Side of Tennis is a hilarious collection of
           stories, poems and sketches which revel in the foibles of players,
           coaches and pushy tennis parents alike. In the fictional English
           countryside of Spin Valley, meet the eclectic population of junior,
