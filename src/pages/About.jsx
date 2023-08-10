@@ -52,7 +52,7 @@ function About() {
           Our latest tennis course ‘How to win tennis matches’ is ideal for
           levels of competitive player.
         </p>
-        <p>To get in touch please email <span className="text-bold text-otfMaroon" href="coachingedgeuk@icloud.com">coachingedgeuk@icloud.com</span></p>
+        <p>To get in touch please email <a className="text-bold text-otfMaroon" href="mailto:coachingedgeuk@icloud?subject=Off The Frame">coachingedgeuk@icloud.com</a></p>
       </div>
     
   );
