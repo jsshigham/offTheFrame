@@ -13,7 +13,7 @@
 
 ## Credits
 
-This project was built a collaboration between [Alistair Higham](https://www.linkedin.com/in/alistairhigham/) (book author) and [Jonathon Higham](https://www.linkedin.com/in/jonathon-higham-55016258/) (web developer). The initial design was developed by Alistair and final edits by Jonathon Higham.
+This project was built a collaboration between [Alistair Higham](https://www.linkedin.com/in/alistairhigham/) (book author) and [Jonathon Higham](https://www.linkedin.com/in/jonathon-higham-55016258/) (web developer). The initial design was developed by Alistair and final edits by Jonathon.
 
 ## Project Link
 
