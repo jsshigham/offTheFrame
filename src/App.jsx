@@ -25,6 +25,9 @@ function App() {
     };
   }, []);
 
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <MyContext.Provider
       value={{ screenWidth, setScreenWidth, isOpen, setIsOpen }}
@@ -41,7 +44,7 @@ function App() {
             <Route path="about" element={<About />} />
           </Routes>
           <footer className="flex items-center justify-center text-xs mt-3">
-            COPYRIGHT <AiOutlineCopyrightCircle /> 2023
+            COPYRIGHT <AiOutlineCopyrightCircle /> {year}
           </footer>
         </div>
       </Router>
